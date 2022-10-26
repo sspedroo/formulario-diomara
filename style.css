@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+.quadrado-form{
+    width: 48em;
+    height: auto;
+    border-radius: 20px;
+    background-color: rgba(228, 241, 241, 0.973);
+    padding: 16px;
+    opacity: 1;
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+.container-principal{
+    display: grid;
+    justify-content: left;
+}
+
+.titulo{
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 1em;
+}
+
+#nome, #email, #idade, #peso, #celular{
+    margin: 5px 5px;
+    width: auto;
+}
+
+input, button{
+    border-radius: 5px;
+    border: 1px solid rgba(66, 65, 65, 0.452);
+    width: auto;
+    height: 20px;
+}
+
+#email, #idade, #peso, #celular{
+    display: block;
+    width: auto;
+    margin-left: 0px;
+}
+
+#nome{
+    display: block;
+    width: auto;
+    margin-left: 0px;
+  }
+  
+  .tipo{
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .tipo legend{
+    margin-bottom: 5px;
+  }
+
+  .contato{
+    display: inline-block;
+    margin-bottom: 2em;
+  }
+
+  .contato legend{
+    margin-bottom: 5px;
+  }
+
+  #enviar {
+    margin-left: 3%;
+    transition: 1s all;
+    cursor:pointer;
+    width: 70px;
+    height: 30px;
+}
+
+#limpar{
+    transition: 1s all;
+    cursor:pointer;
+    width: auto;
+    height: 30px;
+}
+
+.imgForm{
+    display: inline;
+}
+
+.imgForm img{
+    width: 500px;
+    height: 400px;
+    float: right;
+}
+
+#enviar:hover{
+    background-color: rgb(240, 52, 90);
+    border: 1px solid black;
+    transform: scale(1.2);
+    margin-right: 4px;
+}
+
+#limpar:hover{
+    background-color: darkgray;
+    border: 1px solid black;
+    transform: scale(1.2);
+    margin-left: 4px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: darkgray;
+    opacity: 0.9;
+}
+
+.texto-modal{
+background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+.fechar{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fechar:hover,
+.fechar:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-device-width: 780px){
+ .quadrado-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 100px auto;
+    width: 380px;
+    height: auto;
+ }
+
+ .imgForm img{
+    width: 380px;
+    height: auto;
+}
+ .video{
+    position: fixed;
+    width: 100%vw;
+    height: 100%vw;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+}
+}
+
+

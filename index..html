@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário Doe Sangue</title>
+</head>
+<body>
+    <div class="container-principal">
+        <video autoplay muted loop class="video"> 
+        <source src="Donation-in-progress.mp4" type="video/mp4">
+        </video>
+        <div class="quadrado-form">
+            <h1 class="titulo">Seja um doador de sangue e ajude quem precise!</h1>
+            <div class="imgForm">
+                <img src="img/undraw_medicine_b-1-ol.svg" alt="Ilustração Medicos">
+            </div>
+            <form action="" method="get" onsubmit="Alerta()">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" value="" placeholder="Digite seu nome" required>
+                    </div>
+                    <div>
+                        <label for="idade">Idade</label>
+                        <input type="number" name="idade" id="idade" placeholder="Digite sua idade" required>
+                    </div>
+                    <div>
+                        <label for="peso">Peso</label>
+                        <input type="number" name="peso" id="peso" placeholder="Digite seu peso" required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
+                    </div>
+                    <div>
+                        <label for="celular">Celular</label>
+                        <input type="tel" name="celular" id="celular" placeholder="Exemplo: (xx) xxxxx-xxxx" required>
+                    </div>
+                
+                
+                <div class="tipo">
+                        <legend>Qual seu tipo sanguíneo?</legend> 
+                        <select>
+                            <option selected disabled value="">Selecione</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                        </select>
+                    
+                </div>
+                <div class="contato">
+                        <legend>Como prefere o nosso contato?</legend>
+                        <label for="radio-email"><input type="radio" name="contato" valor="email" id="radio-email">Email</label>
+                    
+                        <label for="radio-celular"><input type="radio" name="contato" value="celeluar" id="radio-celular">Celular</label>
+        
+                        <label for="radio-wpp"><input type="radio" name="contato" value="WhatsApp" id="radio-wpp">WhatsApp</label>
+                    
+                </div>
+                <div id="botoes">
+                    <button type="submit" id="enviar">Enviar</button>
+                    <button id="limpar">Limpar Dados</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function Alerta(){
+            alert("Formulário Enviado. Obrigado!");
+        }
+    </script>
+</body>
+
+</html>
